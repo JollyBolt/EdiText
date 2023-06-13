@@ -42,7 +42,7 @@ export default function Navbar(props) {
                                 <NavLink className="nav-link" to="/about">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact-us">Contact Us</NavLink>
+                                <NavLink className="nav-link" to="/contact">Contact Us</NavLink>
                             </li>
                         </ul>
                         <button id='dark-mode-btn' className="btn btn-light my-2" onClick={changeTheme}><img src={btnImg} style={{width:"30px"}} alt="" /></button>
