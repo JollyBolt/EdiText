@@ -1,4 +1,14 @@
+
 nav a.active{
     /* text-decoration: underline; */
     font-weight: bolder;
 }
+
+/* body{
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    margin-top: auto;
+} */

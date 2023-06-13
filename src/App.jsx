@@ -4,6 +4,7 @@ import TextForm from './components/TextForm'
 import About from './components/About'
 import {Route,Routes} from 'react-router-dom'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
         <Route path='/' element={<TextForm heading="Enter the text to analyize"/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
-
       </Routes>
+      <Footer/>
     </>
   )
 }
