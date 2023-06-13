@@ -1,5 +1,3 @@
-// import React from 'react'
-
 import { useState } from "react"
 import moon from '../assets/img/moon-svgrepo-com.svg'
 import sun from '../assets/img/sun-svgrepo-com.svg'
