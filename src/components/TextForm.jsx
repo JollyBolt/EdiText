@@ -33,12 +33,12 @@ return (
             <div className="mb-3">
                 <textarea className="form-control" id="my-box" rows="8" placeholder='Enter Text Here' value={text} onChange={(e) => {setText(e.target.value)}}></textarea>
             </div>
-            <button className="btn btn-primary me-2" onClick={()=>{setText(text.toUpperCase())}}>Convert to Uppercase</button>
-            <button className="btn btn-primary me-2" onClick={()=>{setText(text.toLowerCase())}}>Convert to Lowercase</button>
-            <button className="btn btn-primary me-2" onClick={capitalise}>Capitalise each word</button>
-            <button className="btn btn-primary me-2" onClick={speak}>Listen</button>
-            <button className="btn btn-primary me-2" onClick={()=>{navigator.clipboard.writeText(text)}}>Copy Text</button>
-            <button className="btn btn-primary me-2" onClick={()=>{setText("")}}>Clear Text</button>
+            <button className="btn btn-primary me-2 my-1" onClick={()=>{setText(text.toUpperCase())}}>Convert to Uppercase</button>
+            <button className="btn btn-primary me-2 my-1" onClick={()=>{setText(text.toLowerCase())}}>Convert to Lowercase</button>
+            <button className="btn btn-primary me-2 my-1" onClick={capitalise}>Capitalise each word</button>
+            <button className="btn btn-primary me-2 my-1" onClick={speak}>Listen</button>
+            <button className="btn btn-primary me-2 my-1" onClick={()=>{navigator.clipboard.writeText(text)}}>Copy Text</button>
+            <button className="btn btn-primary me-2 my-1" onClick={()=>{setText("")}}>Clear Text</button>
         </div>
         <h1 className='my-2'>Your Text Summary</h1>
         <p>Entered text has {countWords(text)} words and {text.length} characters.</p>
