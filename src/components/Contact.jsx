@@ -24,7 +24,7 @@ function Contact() {
             To : formState.email,
             From : 'fguy256@gmail.com',
             Subject : "Regarding Your Query",
-            Body : "We have recieved your query and you will be contacted soon."
+            Body : `Dear ${formState.firstName}, we have recieved your query and you will be contacted soon.`
         }).then(
           
         );
