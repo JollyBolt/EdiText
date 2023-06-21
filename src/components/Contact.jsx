@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Contact() {
@@ -9,25 +11,27 @@ function Contact() {
     }
     const submitHandler = (e) => {
         e.preventDefault()
-        // console.log(formState)
+
+        const notify = () => toast.success("Message Sent",{
+            position: "top-center",
+            autoClose: 2500,
+            theme:document.documentElement.getAttribute('data-bs-theme')
+        });
+
         Email.send({
             SecureToken : "3b782a7d-b44c-4b8e-89a7-a472f5a0692b",
             To : 'fguy256@gmail.com',
             From : 'fguy256@gmail.com',
             Subject : "This is the subject",
             Body : formState.message
-        }).then(
-          message => alert(message)
-        );
+        }).then(notify);
         Email.send({
             SecureToken : "3b782a7d-b44c-4b8e-89a7-a472f5a0692b",
             To : formState.email,
             From : 'fguy256@gmail.com',
             Subject : "Regarding Your Query",
             Body : `Dear ${formState.firstName}, we have recieved your query and you will be contacted soon.`
-        }).then(
-          
-        );
+        }).then();
 
     }
     return (
@@ -60,6 +64,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     )
 }
