@@ -32,7 +32,6 @@ function Contact() {
             Subject : "Regarding Your Query",
             Body : `Dear ${formState.firstName}, we have recieved your query and you will be contacted soon.`
         }).then();
-
     }
     return (
         <div className='container mt-5'>
@@ -41,7 +40,7 @@ function Contact() {
                     <h1 className="display-1 fw-bolder ">Send<br/>Us a<br/>Message.</h1>
                 </div>
                 <div className='col-lg-6 col-sm-12 p-3'>
-                    <form className="" onSubmit={submitHandler}>
+                    <form onSubmit={submitHandler}>
                         <div className="">
                             <label htmlFor="inputEmail4" className="form-label">First Name</label>
                             <input type="text" name='firstName' className="form-control" id="fistName" value={formState.firstName} onChange={handleChange} />
