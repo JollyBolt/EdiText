@@ -1,7 +1,7 @@
 
 ## Demo
 
-This project is deployed [here](https://usabilityhub-landingpage-clone.netlify.app/).
+This project is deployed [here](https://editext.netlify.app/).
 <br>
 <br>
 
